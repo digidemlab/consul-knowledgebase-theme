@@ -34,7 +34,39 @@ if ( $nice_infobox_enable === 'true' ) :
 							)
 						);
 
-endif;
+	?>
+
+<?php endif; ?>
+
+<?php
+$nice_cta_text     = get_option( 'nice_cta_text' );
+$nice_cta_url      = get_option( 'nice_cta_url' );
+$nice_cta_url_text = get_option( 'nice_cta_url_text' );
+
+if ( $nice_cta_text != '' || $nice_cta_url_text != '' ) : ?>
+
+	<!-- BEGIN #call-to-action .home-cta-block -->
+	<section id="call-to-action" class="home-cta-block clearfix <?php if ( $nice_cta_url_text != '' ) echo esc_attr( 'has-cta-button' ); ?>">
+
+		<div class="col-full">
+			<div class="cta-wrapper">
+				<?php if ( $nice_cta_text != '' ) : ?>
+					<div class="cta-text"><?php echo esc_html( $nice_cta_text ); ?></div>
+				<?php endif; ?>
+
+				<?php if ( $nice_cta_url_text != '' ) : ?>
+					<span class="cta-button-wrapper">
+						<a class="cta-button" href="<?php echo esc_url( $nice_cta_url ); ?>" title="<?php echo esc_attr( $nice_cta_url_text ); ?>"><?php echo esc_html( $nice_cta_url_text ); ?></a>
+					</span>
+				<?php endif; ?>
+			</div>
+		</div>
+
+	</section>
+
+<?php endif; ?>
+
+<?php
 
 // Display Knowledge Base Articles
 if ( apply_filters( 'nice_homepage_knowledgebase', true ) ) {
@@ -77,7 +109,6 @@ if ( $nice_video_enable === 'true' ) :
 
 
 <?php endif; ?>
-
 
 <?php $nice_footer_columns = ( ! empty( $nice_options['nice_footer_columns'] ) ) ? $nice_options['nice_footer_columns'] : '3'; ?>
 
