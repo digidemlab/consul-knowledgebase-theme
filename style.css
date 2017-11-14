@@ -13,3 +13,266 @@
  * License:     GNU/GPL Version 2 or later
  * Text Domain: nicethemes
  */
+
+/* GENERAL STYLES */
+
+body * {
+	font-family: "Lato", Helvetica, sans-serif;
+	color: #36424A;
+}
+
+h1, h2, h3, h4 {
+	font-weight: bold;
+}
+
+/* HEADER */
+
+#header {
+	clear: both;
+  background-color: #36424a;
+  background-color: -moz-linear-gradient(-45deg, #36424a 0%, #3a778b 100%);
+  background-color: -webkit-linear-gradient(-45deg, #36424a 0%, #3a778b 100%);
+  background-color: linear-gradient(135deg, #36424a 0%, #3a778b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36424a', endColorstr='#3a778b',GradientType=1 );
+  position: relative;
+  background-image: url("/wp-content/uploads/2017/11/consul-people.svg");
+	background-repeat: no-repeat;
+	background-position: center bottom -140px;
+}
+
+#header #top #logo {
+  padding-top: 36px;
+}
+
+#header #top #logo #default-logo, #header #top #logo #retina-logo {
+	width: auto;
+  height: 40px;
+}
+
+#header h2 {
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 15px;
+	border: none;
+}
+
+.welcome-message {
+	text-shadow: none;
+}
+
+.welcome-message h2 {
+	font-size: 40px;
+}
+
+#header p {
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 100px;
+}
+
+#live-search {
+	padding: 0 0 90px 0;
+}
+
+
+/* GLOBAL MENU */
+
+nav#extra-navigation {
+ 	background: #00a8e1;
+	font-size: 14px;
+	width: 100%;
+}
+
+.menu-top-menu-container {
+	display: table;
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+ul#extra-nav li {
+	display: inline-block;
+	color: #fff;
+}
+
+ul#extra-nav {
+  float: right;
+  padding: 6px 0;
+  text-align: center;
+  margin: 0;
+  line-height: 1.6;
+}
+
+ul#extra-nav a {
+  color: #fff;
+  margin: 0 6px;
+  text-decoration: none;
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+ul#extra-nav #menu-item-185 a {
+	text-decoration: underline;
+}
+
+ul#extra-nav li::after {
+  content: '|';
+}
+
+ul#extra-nav li:last-child::after {
+  content: none;
+}
+
+
+/* FOOTER */
+
+#footer-navigation ul li a,
+.widget ul li a,
+#home-videos .video-list ul li a,
+.nice-knowledgebase ul li a {
+    color: #666;
+}
+
+footer#footer {
+	background-color: #DFECF4;
+}
+
+footer#footer p, footer#footer a {
+	color: #000;
+}
+
+
+/* INFO BOXES */
+
+.infoboxes {
+	background-color: #fff;
+}
+
+.infobox-title a {
+	font-weight: bold;
+}
+
+div.nice-infoboxes {
+	height: 350px;
+}
+
+div.nice-infoboxes > div {
+	background-image: url("http://consul-support.digidemlab.org/wp-content/uploads/2017/11/consul-circle.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 90%;
+}
+
+div.nice-infoboxes .item {
+	height: 350px;
+	padding-left: 4%;
+	padding-top: 8%;
+}
+
+
+/* KNOWLEDGE BASE */
+
+body.home #knowledgebase {
+	background: #fff;
+}
+
+
+/* VIDEOS */
+
+#home-videos {
+	background: #DFECF4;
+}
+
+.video-list h2 {
+	line-height: 1em;
+}
+
+
+/* CALL TO ACTION */
+
+#call-to-action{
+	background: #DFECF4;
+}
+
+.cta-button {
+	background-color: #00A8E0 !important;
+	color: #fff;
+}
+
+
+/* ARTICLES */
+
+div#post-author {
+	display: none;
+}
+
+article.post header h2 {
+	line-height: 1.2em;
+}
+
+article.post p {
+	line-height: 1.4em;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+	#header h2 {
+		margin-top: 50px;
+	}
+
+	#header p {
+		margin-bottom: 50px;
+	}
+
+	div.nice-infoboxes {
+		height: 100%;
+	}
+
+	div.nice-infoboxes .item {
+		height: 300px;
+		padding: 5%;
+	}
+
+	div.nice-infoboxes .infobox-title, div.nice-infoboxes .read-more {
+		font-size: 1em;
+	}
+	div.nice-infoboxes .infobox-content{
+		font-size: 0.9em;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+
+	.welcome-message h2 {
+		font-size: 24px;
+	}
+
+	#header #top #logo #default-logo,
+#header #top #logo #retina-logo {
+		max-width: 75%;
+    	height: auto;
+	}
+
+	#header {
+		background-position: center bottom -50px;
+	}
+}
+
+@media only screen and (max-width: 545px) {
+	nav#extra-navigation {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 515px) {
+	div.nice-infoboxes > div {
+		background-size: 60%;
+	}
+
+	div.nice-infoboxes .item {
+		height: 100%;
+		padding: 55px 110px 55px 110px;
+	}
+	
+}
