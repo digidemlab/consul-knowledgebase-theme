@@ -36,31 +36,6 @@ global $nice_options;
 
 				<?php nice_copyright(); ?>
 
-				<nav id="footer-navigation">
-					<?php
-
-						$defaults = array(
-									'menu'            => '',
-									'container'       => 'div',
-									'container_class' => '',
-									'container_id'    => '',
-									'menu_class'      => is_rtl() ? 'nav fl clearfix' : 'nav fr clearfix',
-									'menu_id'         => 'footer-nav',
-									'echo'            => true,
-									'fallback_cb'     => '',
-									'before'          => '',
-									'after'           => '',
-									'link_before'     => '',
-									'link_after'      => '',
-									'depth'           => 0,
-									'walker'          => '',
-									'theme_location'  => 'footer-menu' );
-
-						wp_nav_menu( $defaults );
-
-					?>
-				</nav>
-
 			</div>
 
 		</div>
