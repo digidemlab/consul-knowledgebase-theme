@@ -1,24 +1,18 @@
-/**
- * Flatbase Child by NiceThemes.
- *
- * This theme, like WordPress, is licensed under the GPL.
- * Use it to make something cool, have fun, and share what you've learned with others.
- *
- * Theme Name:  Flatbase Child
- * Template:    flatbase
- * Author:      NiceThemes
- * Author URI:  http://nicethemes.com
- * Description: Designed and developed by NiceThemes.
- * Version:     1.0.0
- * License:     GNU/GPL Version 2 or later
- * Text Domain: nicethemes
- */
+/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
 
 /* GENERAL STYLES */
 
 body * {
 	font-family: "Lato", Helvetica, sans-serif;
 	color: #36424A;
+}
+
+body {
+	font-size: 16px;
 }
 
 h1, h2, h3, h4 {
@@ -29,53 +23,29 @@ h1, h2, h3, h4 {
 
 #header {
 	clear: both;
-  background-color: #36424a;
-  background-color: -moz-linear-gradient(-45deg, #36424a 0%, #3a778b 100%);
-  background-color: -webkit-linear-gradient(-45deg, #36424a 0%, #3a778b 100%);
-  background-color: linear-gradient(135deg, #36424a 0%, #3a778b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36424a', endColorstr='#3a778b',GradientType=1 );
-  position: relative;
-  background-image: url("/wp-content/uploads/2017/11/consul-people.svg");
+	background-color: #36424a;
+	background-color: -moz-linear-gradient(-45deg, #36424a 0%, #3a778b 100%);
+	background-color: -webkit-linear-gradient(-45deg, #36424a 0%, #3a778b 100%);
+	background-color: linear-gradient(135deg, #36424a 0%, #3a778b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36424a', endColorstr='#3a778b',GradientType=1 );
+	position: relative;
+	background-image: url("https://manual.consulproject.org/wp-content/uploads/2017/11/consul-people.svg");
 	background-repeat: no-repeat;
 	background-position: center bottom -140px;
 }
 
 #header #top #logo {
-  padding-top: 36px;
+    padding-top: 36px;
 }
 
 #header #top #logo #default-logo, #header #top #logo #retina-logo {
 	width: auto;
-  height: 40px;
-}
-
-#header h2 {
-	font-weight: bold;
-	color: #fff;
-	margin-bottom: 15px;
-	border: none;
-}
-
-.welcome-message {
-	text-shadow: none;
-}
-
-.welcome-message h2 {
-	font-size: 40px;
-}
-
-#header p {
-	color: #fff;
-	font-weight: normal;
-	margin-bottom: 100px;
+    height: 40px;
 }
 
 #live-search {
 	padding: 0 0 90px 0;
 }
-
-
-/* GLOBAL MENU */
 
 nav#extra-navigation {
  	background: #00a8e1;
@@ -122,8 +92,20 @@ ul#extra-nav li:last-child::after {
   content: none;
 }
 
+#header h2 {
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 15px;
+	border: none;
+}
 
-/* FOOTER */
+.welcome-message {
+	text-shadow: none;
+}
+
+.welcome-message h2 {
+	font-size: 40px;
+}
 
 #footer-navigation ul li a,
 .widget ul li a,
@@ -132,16 +114,13 @@ ul#extra-nav li:last-child::after {
     color: #666;
 }
 
-footer#footer {
-	background-color: #DFECF4;
+#header p {
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 100px;
 }
 
-footer#footer p, footer#footer a {
-	color: #000;
-}
-
-
-/* INFO BOXES */
+/* INFOBOXES */
 
 .infoboxes {
 	background-color: #fff;
@@ -156,7 +135,7 @@ div.nice-infoboxes {
 }
 
 div.nice-infoboxes > div {
-	background-image: url("http://consul-support.digidemlab.org/wp-content/uploads/2017/11/consul-circle.svg");
+	background-image: url("https://manual.consulproject.org/wp-content/uploads/2017/11/consul-circle.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 90%;
@@ -168,6 +147,22 @@ div.nice-infoboxes .item {
 	padding-top: 8%;
 }
 
+div.nice-infoboxes .infobox-title a {
+	padding: 30px 15px 20px 15px;
+	margin-bottom: 0;
+}
+
+div.nice-infoboxes .infobox-content {
+	margin-top: 0;
+}
+
+div.nice-infoboxes .infobox-title:hover {
+	text-decoration: underline;
+}
+
+div.nice-infoboxes a.read-more {
+	visibility: hidden;
+}
 
 /* KNOWLEDGE BASE */
 
@@ -175,8 +170,7 @@ body.home #knowledgebase {
 	background: #fff;
 }
 
-
-/* VIDEOS */
+/* VIDEO LIBRARY */
 
 #home-videos {
 	background: #DFECF4;
@@ -185,7 +179,6 @@ body.home #knowledgebase {
 .video-list h2 {
 	line-height: 1em;
 }
-
 
 /* CALL TO ACTION */
 
@@ -198,8 +191,56 @@ body.home #knowledgebase {
 	color: #fff;
 }
 
+/* FOOTER */
+
+footer#footer {
+	background-color: #DFECF4;
+}
+
+footer#footer p, footer#footer a {
+	color: #000;
+}
+
+#footer-widgets h2 {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	padding: 10px 0;
+	color: #333447;
+}
+
+#footer-widgets p {
+	font-size: 18px;
+	letter-spacing: 0.02em;
+	font-weight: 200;
+}
+
+#footer-widgets .widget ul {
+	display: flex;
+	padding-top: 10px;
+	justify-content: flex-end;
+}
+
+#footer-widgets .widget ul li {
+	border-bottom: none;
+	font-size: 18px;
+	padding: 0 10px;
+	margin-top: 30px;
+}
+
+#footer-widgets .widget h2 {
+	font-size: 32px;
+	line-height: 48px;
+}
+
+#footer-widgets .widget-section.columns-3 {
+	width: 50%;
+}
 
 /* ARTICLES */
+
+.entry {
+	font-size: 1em;
+}
 
 div#post-author {
 	display: none;
@@ -213,6 +254,19 @@ article.post p {
 	line-height: 1.4em;
 }
 
+h3#reply-title a {
+	background: #00A8E0;
+	color: #fff;
+    font-size: 16px;
+    padding: 21px 35px 19px;
+	border-radius: 5px;
+    border-style: solid;
+    border-width: 1px 1px 3px !important;
+	border-color:#0097C9;
+    display: inline-block;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
 
 /* MEDIA QUERIES */
 
@@ -231,14 +285,17 @@ article.post p {
 
 	div.nice-infoboxes .item {
 		height: 300px;
-		padding: 5%;
+		padding: 8% 5%;
 	}
 
-	div.nice-infoboxes .infobox-title, div.nice-infoboxes .read-more {
-		font-size: 1em;
-	}
 	div.nice-infoboxes .infobox-content{
 		font-size: 0.9em;
+	}
+}
+
+@media only screen and (min-width: 686px) and (max-width: 728px) {
+	#live-search #searchsubmit {
+		margin-right: 8px;	
 	}
 }
 
@@ -259,20 +316,73 @@ article.post p {
 	}
 }
 
+@media only screen and (max-width: 600px) {
+	#call-to-action {
+		display: block;
+	}
+}
+
 @media only screen and (max-width: 545px) {
 	nav#extra-navigation {
 		display: none;
 	}
+
+	div#footer-widgets footer-grid {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#footer-widgets .widget-section.columns-3 {
+		width: 100%;
+	}
+	
+	#footer-widgets .widget ul {
+		justify-content: flex-start;
+		padding-top: 0;
+	}
+
+	#footer-widgets .widget ul li {
+		margin-top: 0;
+	}
+	
 }
 
-@media only screen and (max-width: 515px) {
+@media only screen and (max-width: 700px) {
 	div.nice-infoboxes > div {
-		background-size: 60%;
+		background-image: none;
+
 	}
 
 	div.nice-infoboxes .item {
 		height: 100%;
-		padding: 55px 110px 55px 110px;
+		padding: 0;
 	}
 	
+	div.nice-infoboxes .infobox-title {
+		text-decoration: underline;
+	}
+
+	div.nice-infoboxes .item:not(:last-child):after {
+    color: #4b4d4b;
+    content: "-";
+    display: table;
+    font-size: 3.6rem;
+    font-weight: lighter;
+    margin: 0 auto;
+	}
+
+	div.nice-infoboxes a.read-more {
+		padding: 0;
+	}
+
+	#call-to-action .cta-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.has-cta-button .cta-text {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
 }
