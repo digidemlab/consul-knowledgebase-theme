@@ -26,6 +26,8 @@ global $nice_options;
 		</div>
 	<?php endif; ?>
 
+	<!-- CALL TO ACTION PLACEHOLDER (template-home.php) -->
+
 	<!-- BEGIN #footer -->
 	<footer id="footer">
 
@@ -33,7 +35,9 @@ global $nice_options;
 
 		<div id="extended-footer">
 			<div class="col-full">
-
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br>
+				<p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+				<br>
 				<?php nice_copyright(); ?>
 
 			</div>
